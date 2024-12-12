@@ -1,7 +1,7 @@
 /** @format */
 import React from "react";
-import { Props } from "./index";
 import Link from "next/link";
+import { Props } from "./index.types";
 
 const LinkContainer: React.FC<Props> = ({ children, href, classes, id }) => {
   return (
