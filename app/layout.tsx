@@ -1,5 +1,8 @@
 /** @format */
 import "./globals.css";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 const iranSance = localFont({ src: "../public/fonts/iranSans.woff2" });

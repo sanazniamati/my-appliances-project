@@ -15,6 +15,9 @@ const config: Config = {
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "bg-card1": "url('/images/slider-img-1-2-min.png')",
       },
+      backgroundPosition: {
+        "custom-position": "0.5em 0em",
+      },
     },
   },
   plugins: [],
