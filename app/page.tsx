@@ -1,8 +1,11 @@
 /** @format */
 
 import BrandsSlider from "./components/brands-slider";
+import DiscountProduct from "./components/dicount-product";
 import FeatureProduct from "./components/feature-product";
 import MainContent from "./components/main-content";
+import NewestProduct from "./components/newest-product";
+import OverViewProduct from "./components/overview-product";
 import SectionSpace from "./lib/design/common/section-space";
 
 export default function Home() {
@@ -11,6 +14,9 @@ export default function Home() {
       <MainContent />
       <FeatureProduct />
       <BrandsSlider />
+      <NewestProduct />
+      <DiscountProduct />
+      <OverViewProduct />
     </SectionSpace>
   );
 }
