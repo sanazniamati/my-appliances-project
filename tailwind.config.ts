@@ -16,7 +16,7 @@ const config: Config = {
         "bg-card1": "url('/images/slider-img-1-2-min.png')",
       },
       backgroundPosition: {
-        "custom-position": "0.5em 0em",
+        "custom-position": "0.2em 0.7em",
       },
     },
   },

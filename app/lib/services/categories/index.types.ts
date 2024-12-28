@@ -1,6 +1,6 @@
 /** @format */
 
-interface CategoryState {
+export interface CategoriesState {
   _id: string;
   name: string;
   description: string;
@@ -8,7 +8,7 @@ interface CategoryState {
 
 export interface GetCategoryResponce {
   data: {
-    categories: CategoryState[];
+    categories: CategoriesState[];
     error: string;
     message: string;
   };
