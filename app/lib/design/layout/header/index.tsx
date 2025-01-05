@@ -20,7 +20,9 @@ const Header = () => {
           </Button>
           <div className=" flex gap-6">
             {linksArray.map((item) => (
-              <LinkContainer href={item.href}>{item.title}</LinkContainer>
+              <LinkContainer key={item.id} href={item.href}>
+                {item.title}
+              </LinkContainer>
             ))}
           </div>
         </section>

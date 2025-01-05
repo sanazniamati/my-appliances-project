@@ -22,7 +22,7 @@ const RattingProduct = () => {
       <div></div>
       <section className=" grid grid-cols-4 gap-6 p-2">
         {getProducts?.data.products.map((product) => {
-          return <ProductCard product={product} />;
+          return <ProductCard product={product} key={product._id} />;
         })}
       </section>
     </section>
