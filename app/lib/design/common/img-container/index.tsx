@@ -17,8 +17,8 @@ const ImageContainer: React.FC<Props> = ({ src, classes }) => {
         alt={"image"}
         fill
         loading="lazy"
-        sizes="(max-width: 1200px) 100vw"
-        //sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        // sizes="(max-width: 1200px) 100vw"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       />
     </div>
   );
