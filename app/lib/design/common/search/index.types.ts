@@ -4,5 +4,7 @@ export interface searchProps {
   placeholder?: string;
   buttonLabel?: string;
   className?: string;
-  onSearch?: (value: string) => void;
+  value: string;
+  handleGetValue: (value: any) => void;
+  onClick: () => void;
 }

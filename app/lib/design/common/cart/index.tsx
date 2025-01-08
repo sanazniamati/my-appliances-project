@@ -5,11 +5,13 @@ import LinkContainer from "../link-container";
 import { CartProps } from "./index.types";
 import { FaShoppingCart } from "react-icons/fa";
 import Text from "../text";
+import { ShoppingCartFullIcon } from "../icons";
 
 const Cart: React.FC<CartProps> = ({ itemCount = 5, className }) => {
   return (
     <LinkContainer href={"/cart"} classes={cn("relative cursor-pointer", className)}>
-      <FaShoppingCart size={24} className="text-white" />
+      {/* <FaShoppingCart size={24} className="text-white" /> */}
+      <ShoppingCartFullIcon width={30} height={30} />
       {itemCount > 0 && (
         <Text
           as="span"

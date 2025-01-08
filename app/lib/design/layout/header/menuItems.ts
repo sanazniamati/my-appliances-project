@@ -2,7 +2,7 @@
 
 import { URLS } from "@/app/lib/types/urls";
 
-export const linksArray = [
+export const items = [
   { id: "1", href: URLS.home, title: "صفحه اصلی" },
   { id: "2", href: URLS.product, title: "محصولات" },
   { id: "3", href: URLS.aboutUs, title: "درباره ما" },

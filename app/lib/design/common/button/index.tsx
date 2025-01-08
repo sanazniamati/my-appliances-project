@@ -4,6 +4,7 @@ import { FC } from "react";
 import { Props } from "./index.types";
 import { FaSpinner } from "react-icons/fa";
 import { cn } from "@/app/lib/utils/cn";
+import Animation from "../animation";
 
 const Button: FC<Props> = ({
   children,
@@ -13,6 +14,7 @@ const Button: FC<Props> = ({
   leftIcon,
   rightIcon,
   className,
+  onClick,
   ...rest
 }) => {
   const baseClasses =
@@ -23,9 +25,14 @@ const Button: FC<Props> = ({
   const disabledClasses = isLoading ? "opacity-50 cursor-not-allowed" : "";
 
   return (
-    <button className={cn(baseClasses, outlineClasses, disabledClasses, className)}>
+    <button
+      onClick={onClick}
+      className={cn(baseClasses, outlineClasses, disabledClasses, className)}
+      disabled={isLoading}
+      {...rest}
+    >
       {isLoading ? (
-        <FaSpinner className="animate-spin text-lg" />
+        <Animation />
       ) : (
         <>
           {leftIcon && <span className="mr-2">{leftIcon}</span>}
