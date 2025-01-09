@@ -24,11 +24,9 @@ const Search: React.FC<searchProps> = ({
         className="w-full p-3 pr-12 rounded-full border"
       />
       <Button
-        onClick={() => {
-          onClick();
-        }}
-        className=" absolute left-2 top-1/2 transform -translate-y-1/2
-      flex items-center justify-center px-3 py-2 bg-teal-600 "
+        onClick={onClick}
+        className="absolute left-2 top-1/2 transform -translate-y-1/2 
+       flex items-center justify-center w-8 h-8 bg-teal-600 text-white rounded-full"
       >
         <Icons.MdSearch size={20} />
         {buttonLabel && <span className="ml-2">{buttonLabel}</span>}
