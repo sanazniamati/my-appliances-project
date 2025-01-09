@@ -2,7 +2,7 @@
 
 import Text from "@/app/lib/design/common/text";
 import Title from "@/app/lib/design/title";
-import { CommentIcon } from "@/app/lib/icons";
+import { CommentIcon } from "@/app/lib/design/common/icons";
 import { ItemProps } from "./index.types";
 
 const Item: React.FC<ItemProps> = ({ name, description }) => {
