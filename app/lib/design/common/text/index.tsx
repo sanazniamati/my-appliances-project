@@ -12,6 +12,7 @@ const Text: React.FC<Props> = ({ as = "p", size = "md", weight = "normal", child
     sm: "text-sm",
     md: "text-base",
     lg: "text-lg",
+    xl: "text-xl",
   };
 
   const weightClasses = {
