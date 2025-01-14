@@ -4,7 +4,7 @@ import Animation from "@/app/lib/design/common/animation";
 import LinkContainer from "@/app/lib/design/common/link-container";
 import Text from "@/app/lib/design/common/text";
 import { useGetCategories } from "@/app/lib/hooks/categories";
-import { LeftArrowContainIcon } from "@/app/lib/icons";
+import { LeftArrowContainIcon } from "@/app/lib/design/common/icons";
 import { cn } from "@/app/lib/utils/cn";
 
 const CategorySidebar = () => {
