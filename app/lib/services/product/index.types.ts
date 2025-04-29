@@ -6,7 +6,7 @@ import { CategoriesState } from "../categories/index.types";
 // !! Product Id
 export interface GetProductByIdResponse {
   data: {
-    product: GetProductState;
+    product: ProductState;
   };
   error: any;
   message: string;
@@ -16,8 +16,14 @@ export interface GetProductByIdProps {
   id: string;
 }
 
+export interface TechnicalSpecificationsState {
+  key: string;
+  value: string;
+  _id: string;
+}
+
 // !! Product State
-export interface GetProductState {
+export interface ProductState {
   _id: string;
   name: string;
   description: string;
@@ -31,16 +37,25 @@ export interface GetProductState {
   sales: number;
   createdAt: string;
   updatedAt: string;
+  technicalSpecifications: TechnicalSpecificationsState[];
 }
 
 // !! Products
+
+export interface GetProductByIdResponse {
+  data: {
+    product: ProductState;
+  };
+  error: any;
+  message: string;
+}
 
 export interface GetProductsResponse {
   data: {
     totalProducts: number;
     totalPages: number;
     currentPage: number;
-    products: GetProductState[];
+    products: ProductState[];
     next: number | null;
     prev: number | null;
   };

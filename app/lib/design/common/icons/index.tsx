@@ -119,3 +119,47 @@ export const ArrowDownIcon: React.FC<Props> = ({ width = 12, height = 12, color 
     </svg>
   );
 };
+
+export const LikeEmptyIcon: React.FC<Props> = ({ width = 22, height = 20 }) => {
+  return (
+    <svg width={width} height={height} viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M11.62 18.81C11.28 18.93 10.72 18.93 10.38 18.81C7.48 17.82 1 13.69 1 6.69C1 3.6 3.49 1.1 6.56 1.1C8.38 1.1 9.99 1.98 11 3.34C12.01 1.98 13.63 1.1 15.44 1.1C18.51 1.1 21 3.6 21 6.69C21 13.69 14.52 17.82 11.62 18.81Z"
+        stroke="#292D32"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const LikeFillIcon: React.FC<Props> = ({ width = 22, height = 20, color = "black" }) => {
+  return (
+    <svg width={width} height={height} viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M11.62 18.81C11.28 18.93 10.72 18.93 10.38 18.81C7.48 17.82 1 13.69 1 6.69C1 3.6 3.49 1.1 6.56 1.1C8.38 1.1 9.99 1.98 11 3.34C12.01 1.98 13.63 1.1 15.44 1.1C18.51 1.1 21 3.6 21 6.69C21 13.69 14.52 17.82 11.62 18.81Z"
+        fill="#EB5050"
+        stroke="#EB5050"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ReplyCommentIcon: React.FC<Props> = ({ width = 20, height = 20, color = "blue" }) => {
+  return (
+    <svg
+      cursor={"pointer"}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 512 512"
+      width={width}
+      height={height}
+      fill={color}
+    >
+      <path d="M8.3 189.8L184.3 37.9C199.7 24.5 224 35.3 224 56v80.1c160.6 1.8 288 34 288 186.3 0 61.4-39.6 122.3-83.3 154.1-13.7 9.9-33.1-2.5-28.1-18.6 45.3-145-21.5-183.5-176.6-185.7V360c0 20.7-24.3 31.5-39.7 18.2l-176-152c-11.1-9.6-11.1-26.8 0-36.3z" />
+    </svg>
+  );
+};

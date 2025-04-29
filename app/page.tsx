@@ -1,5 +1,11 @@
 /** @format */
 
+"use client";
+
+import { createContext } from "react";
+
+// import React, { createContext, useContext, useState, memo } from "react";
+
 import BrandsSlider from "./components/brands-slider";
 import DiscountProduct from "./components/dicount-product";
 import FeatureProduct from "./components/feature-product";
