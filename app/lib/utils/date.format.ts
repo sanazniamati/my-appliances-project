@@ -24,3 +24,10 @@ const formatDateToEnglish = (myDate: Date) => {
   const day = String(myDate.getDate()).padStart(2, "0");
   return `${year}/${month}/${day}`;
 };
+
+export const getRemainingTime = (expiresAt: string) => {
+  const expiryDate = new Date(expiresAt);
+  const now = new Date();
+  const diffInSecends = Math.floor((expiryDate.getTime() - now.getTime()) / 1000);
+  return Math.max(diffInSecends, 0);
+};
